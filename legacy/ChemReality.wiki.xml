@@ -1,0 +1,141 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.5/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.5/ http://www.mediawiki.org/xml/export-0.5.xsd" version="0.5" xml:lang="en">
+  <siteinfo>
+    <sitename>GGCWiki</sitename>
+    <base>http://wiki.ggc.edu/wiki/Main_Page</base>
+    <generator>MediaWiki 1.17.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">GGCWiki</namespace>
+      <namespace key="5" case="first-letter">GGCWiki talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>ChemReality</title>
+    <id>233466</id>
+    <revision>
+      <id>1280346</id>
+      <timestamp>2019-05-07T22:00:11Z</timestamp>
+      <contributor>
+        <username>Rlutz1</username>
+        <id>3615</id>
+      </contributor>
+      <minor/>
+      <comment>Protected &quot;[[ChemReality]]&quot; ([edit=sysop] (indefinite) [move=sysop] (indefinite))</comment>
+      <text xml:space="preserve" bytes="11210">__NOTOC__
+
+[[File:ARChemLogo.png|center|350x350px]]
+
+&lt;h1&gt;&lt;center&gt;Augmented Reality (AR) Experiences in Chemistry&lt;/center&gt;&lt;/h1&gt;
+
+=== The need for AR in the classroom ===
+
+Chemistry is a difficult subject to master in part because the chemistry of the macroscopic phenomena we observe cannot be fully understood without looking at the molecular level and beyond. Ultimately, chemistry consists of three intimately related types of knowledge, macroscopic, sub-microscopic, and symbolic. To truly understand the chemistry of the world around us, we must seamlessly integrate all these knowledge types. Traditionally, chemists have used physical model kits to aid in integrating theses levels of knowledge, and to bring the abstract ideas of the sub-microscopic level of chemistry to life. The evolution of technology has lead to chemists turning to increasingly accurate and easy to use computerized models. Incorporating these computerized models, along with AR technology into smartphones provides students with a new and exciting way to interact with chemistry.
+
+==Current Work:  Pairing AR and Machine Learning (ML) in an AR Molecule Viewing Mobile App==
+Unity 3D and ARCore were used to create an application that can provide an AR experience that will help students to verify and distinguish between different molecules. This is done through the use of Google AutoML which is a machine learning tool that allows the construction of an image recognition model that can differentiate between different chemistry molecules. Molecules such as water, benzene, cyclohexane, and aspirin are currently being integrated into the AutoML database. Over 1500 images for each molecule have been represented and organized into a repository on the Google Cloud Platform (GCP). These images consist of both 2D and 3D computer generated, and hand-drawn images. The image recognition model is able to use this dataset to recognize never-before-seen images of all labels from the trained dataset with an accuracy of 95% or greater. The process used to develop the model and integrate it into a mobile app is shown in the figure below. 
+
+[[File:ARChemMLModel.png|950x950px|center]]
+A more detailed explanation of why we chose machine learning and Google AutoML can be found [http://wiki.ggc.edu/images/7/7c/ARChemAIAbstract.pdf here.]
+&lt;br&gt;
+Click [https://youtu.be/FdlaJNtyB1w here] to watch a DEMO of our ML model.
+&lt;br&gt;
+&lt;br&gt;
+The application allows students to take pictures of molecular structures, or select a particular molecular from a drop down menu, and convert them into an interactive AR based, 3D structure. The functionality of the application is split between the AR experience which can be seen on the blue section, and the image recognition portion that employs our ML model, which is shown in green. 
+
+[[File:ARChemAppWorkflow.png|950x950px|center]]
+&lt;br&gt;
+Click [http://wiki.ggc.edu/images/e/ec/ARChemAppDevAbstract.pdf here] for a more detailed Description of the Application Development. &lt;br&gt;
+Click [https://youtu.be/eGMo6pQ4bHo here] to watch a DEMO of the current AR-Chem app.
+&lt;br&gt;
+
+== Prior Projects ==
+
+[[Image:Demo.png|alt=ChemReality Demo|border|right|frameless|350x350px]]
+=== Molecules and ML: Image Classification for an AR-Enabled Chemistry Classroom===
+In coordination with AR, artificial intelligence (AI) and ML has the potential of creating a new way of interacting with the world, particularly in the field of education. This initial proof of concept trained and utilized an AI model that will recognize molecular structures. Hand-drawn or computer-generated images are uploaded and ran through the model. They are then labeled and used train the model.  Finally, the model is exposed to never before seen molecular representations and asked to classify them.  With enough images of a particular molecule incorporated into the model, it can successfully differentiate between different molecules it has been trained on.  A robust model trained on a larger number of molecules may be a viable image recognition solution for an AR based molecule viewing mobile app.
+
+Click [http://wiki.ggc.edu/images/e/e6/CCSCSE18MLModelAbstract.pdf here] for a detailed description of ML model development.
+&lt;br&gt;
+Click [https://youtu.be/pljIc9hvaTw here] for a DEMO of the ML model proof of concept.
+&lt;br&gt;
+=== AR Mobile App Development ===
+[[Image:ChemRealityPennington.png|alt=ChemReality Demo|border|right|frameless|360x360px]]
+
+The AR and Image Recognition Project was conceived to help provide a 3D chemical representation of a 2D chemical structure. By aiming the camera of your device at the 2D chemical structure a 3D representation of that structure will appear on your device's display. The app is more portable than the commonly used chemistry model kits, and produces a 3D representation instantly rather than having to build the structure piece by piece. Our initial goal was the get the technology in the hands of the students as quickly as possible.  We constructed the app using Aurasma (now HP Reveal) to generate our initial proof of concept AR molecule viewing app, which is depicted in the image to the right.
+
+Click [http://wiki.ggc.edu/images/f/f2/ChemRealityWebOptimized.m4v here] to watch a DEMO of our Aurasma based AR molecule viewing app.
+
+If you want to recreate the demo on your mobile device, follow the directions found [http://wiki.ggc.edu/images/1/11/StepsToConfigureAurasmaAndRunTheDemo.pdf here]. Once the app is installed and setup, the image below with trigger the demo.
+
+[[Image:ChemRealityIsomerProjectTrigger.png|alt=Isomer Triggers|border|center|frameless|360x360px]]
+
+Pilot testing with students revealed an interest in using the Aurasma baed app for educational purposes, but students wanted the app to have better functionality.  To accommodate these user requests, we needed to construct our own AR-Chem molecule viewing app.  Version 1.0 of the app allows free movement of the 3D, AR-based molecules, and it can display multiple 3D, AR-based molecules at the same time. All of the 3D, AR-based structures are triggered from 2D representations of the molecules.  This practice should allow students to build the representational competence necessary to understand concepts like chirality.
+
+Click [http://wiki.ggc.edu/images/5/5c/Mdeiters-vuforia-chemreality.mp4 here] to watch a DEMO of our AR-Chem App Version 1.0
+
+Version 2.0 of the AR-Chem app incorporates a shared user experience. The shared experience allows an instructor to facilitate a group experience where all students are viewing the same AR-based molecular simulation on their own mobile device. Additionally, the instructor can give control to the students to explore individually at any point. The shared experience requires all users to be connect to the same wireless network.
+
+Click [http://wiki.ggc.usg.edu/images/e/e9/CCSC_Central_Plains_Abstract_Final_Draft.pdf here] to learn more about the development of the shared user experience in the AR-Chem App Version 2.0.
+&lt;br&gt;
+Click [http://wiki.ggc.usg.edu/images/f/fc/App_Demo.mp4 here] to watch a DEMO of our AR-Chem App Version 2.0
+
+=== MR Mol: Mixed Reality Molecule Viewing App=== 
+In addition to developing AR molecule viewing apps for mobile devices, we have developed a mixed reality (MR) app, known as MR. Mol,  for Microsoft's HoloLens 1. MR Mol creates 3D chemical structures which the user may interact with through gestures and voice commands. MR Mol allows the user to freely move around the molecule in three dimensions offering the same molecule from different perspectives. Through use of MR Mol, students may development a better understanding of a molecule's molecular geometry, the effect single, double, and triple bonds have on bond distance, and how to differentiate stereo-isomers.
+
+More information about the development of MR. Mol can be found by clicking [http://wiki.ggc.edu/images/1/19/MR.Mol.pdf here]. &lt;br&gt;
+Click [https://www.youtube.com/watch?v=Cz63zpPNqq0&amp;feature=youtu.be here] to watch a short DEMO of MR. Mol. &lt;br&gt;
+Click [https://www.youtube.com/watch?v=jKOSqb6_HIU&amp;feature=youtu.be here] to watch a longer DEMO of MR. Mol. &lt;br&gt;
+
+==Publications==
+&lt;ul&gt;
+  &lt;li&gt;	Behmke, D.; Kerven, D.; Lutz, R.; Paredes, J.; Pennington, R.; Brannock, E.; Deiters, M.; Rose, J.; and Stevens, K. (2018) &quot;Augmented Reality Chemistry: Transforming 2-D Molecular Representations into Interactive 3-D Structures,&quot; Proceedings of the Interdisciplinary STEM Teaching and Learning Conference: Vol. 2 , Article 3.  DOI: 10.20429/stem.2018.020103 &lt;/li&gt;
+
+&lt;/ul&gt;
+
+==Recent Presentations and Awards==
+&lt;ul&gt;
+    &lt;li&gt;	Doghaimat, D.*; Tyner, N.*; Patel, S.*; Vazquez, L.*; Behmke, D.A.; Lutz, R.; Brannock, E. Molecules and Machine Learning Integration Utilizing AutoML. Poster Presentation, Georgia Gwinnett College CREATE Symposium, April 2019.&lt;/li&gt;
+
+   &lt;li&gt;	Anderson, J.*; Smith, R.*; Shaik, A.*; Behmke, D.A.; Lutz, R.; Brannock, E. Shared Augmented Reality (AR) Experience of 3D Molecules for Chemistry Students. Poster Presentation, Georgia Gwinnett College CREATE Symposium, April 2019.&lt;/li&gt;
+
+   &lt;li&gt;	Doghaimat, D.*; Tyner, N.*; Patel, S.*; Vazquez, L.*; Behmke, D.A.; Lutz, R.; Brannock, E. Molecules and Machine Learning Integration Utilizing AutoML. Poster Presentation, Georgia Gwinnett College School of Science and Technology STaRS, April 2019. '''(2nd Place Poster Contest)'''&lt;/li&gt;
+
+   &lt;li&gt;	Anderson, J.*; Smith, R.*; Shaik, A.*; Behmke, D.A.; Lutz, R.; Brannock, E. Shared Augmented Reality (AR) Experience of 3D Molecules for Chemistry Students. Poster Presentation, Georgia Gwinnett College School of Science and Technology STaRS, April 2019. '''(1st Place Poster Contest)'''&lt;/li&gt;
+
+   &lt;li&gt;	Doghaimat, D.*; Tyner, N.*; Patel, S.*; Vazquez, L.*; Behmke, D.A.; Lutz, R.; Brannock, E. Molecules and Machine Learning Integration Utilizing AutoML. Poster Presentation, Consortium for Computer Sciences in Colleges Central Plains Conference, April 2019. '''(2nd Place Research Contest)'''&lt;/li&gt;
+
+   &lt;li&gt;      Anderson, J.*; Smith, R.*; Shaik, A.*; Behmke, D.A.; Lutz, R.; Brannock, E. Shared Augmented Reality (AR) Experience of 3D Molecules for Chemistry Students. Poster Presentation, Consortium for Computer Sciences in Colleges Central Plains Conference, April 2019. '''(2nd Place Research Contest)'''&lt;/li&gt; 
+
+  &lt;li&gt;	Paredes, J.E.B.; Behmke, D.A.; Pennington, R.; Kerven, D.; Lutz, R.; Brannock, E. Interdisciplinary Exploration of Augmented Reality to Enhance Student Learning in Organic Synthesis. Oral Presentation, American Chemical Society National Meeting, Orlando, FL, March 2019.&lt;/li&gt;
+
+  &lt;li&gt;	Behmke, D.A.; Kerven, D.; Lutz, R.; Brannock, E.; Paredes, J.E.B.; Doghaimat, D.*; Tyner, N.*; Maldonado, C.*; Anderson, J.*; Moses, T.* Molecules and Machine Learning: Images Classified by ML Used as Input to an Augmented Reality App for Chemistry Education. Poster Presentation, American Chemical Society National Meeting, Orlando, FL, March 2019.&lt;/li&gt;
+
+&lt;/ul&gt;
+
+Click [http://wiki.ggc.edu/images/7/73/AR-ChemistryScholarly.pdf here] for all presentations 
+&lt;br&gt;
+== For More Information ==
+Contact 
+*Dr. Derek Behmke at dbehmke@ggc.edu
+*Dr. David Kerven at dkerven@ggc.edu
+*Dr. Evelyn Brannock at ebrannoc@ggc.edu
+*Dr. Robert Lutz at rlutz@ggc.edu</text>
+    </revision>
+  </page>
+</mediawiki>
